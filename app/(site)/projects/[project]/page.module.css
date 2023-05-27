@@ -1,0 +1,38 @@
+.mainContainer {
+  width: 100vw;
+  padding: 2em;
+}
+
+.mainContainer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContainer h1 {
+  background: linear-gradient(#e66465, #9198e5);
+  background-clip: text;
+  color: transparent;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.mainContainer a {
+  background-color: gray;
+  border-radius: 1em;
+  color: red;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.content {
+  color: gray;
+  margin-top: 1em;
+}
+
+.img {
+  margin-top: 1em;
+  border: 0.1 solid gray;
+  object-fit: cover;
+  border-radius: 1em;
+}

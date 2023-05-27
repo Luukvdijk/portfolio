@@ -1,0 +1,51 @@
+.mainContainer {
+  margin: 1em;
+}
+
+.mainContainer h1 {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.mainContainer span {
+  background: linear-gradient(#e66465, #9198e5);
+  background-clip: text;
+  color: transparent;
+}
+
+.mainContainer p {
+  font-size: 2em;
+  color: gray;
+}
+
+.mainContainer h2 {
+  margin-top: 2em;
+  font-family: bold;
+  color: gray;
+  font-size: 2em;
+}
+
+.projectContainer {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  border: 0.1em solid gray;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.pName {
+  font-weight: bolder;
+  background: linear-gradient(#e66465, #9198e5);
+  background-clip: text;
+  color: transparent;
+}
+
+.pImg {
+  object-fit: cover;
+  border-radius: 1em;
+}

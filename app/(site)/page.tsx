@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <div className={styles.mainContainer}>
       <h1>
-        Hello I'm <span>Luuk!</span>
+        Hello Im <span>Luuk!</span>
       </h1>
       <p>Aloha everyone! CHeck out my projects!</p>
 

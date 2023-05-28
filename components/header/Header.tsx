@@ -23,6 +23,7 @@ export default function Header() {
         alt="forest trees"
         className={styles.foreground}
       />
+      <div className={`${styles.foreground} ${styles.extra}`}></div>
       <div className={styles.contentContainer}>
         <div className={styles.titleContainer}>
           <h1>Luuk van Dijk</h1>

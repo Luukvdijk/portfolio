@@ -29,6 +29,12 @@
   transform: translateZ(-5px) scale(1.5);
 }
 
+.extra {
+  margin-top: 250dvh;
+  background-color: var(--primary-color);
+  height: 20dvh;
+}
+
 .background,
 .middelground {
   position: absolute;

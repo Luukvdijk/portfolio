@@ -1,4 +1,6 @@
 .mainContainer {
   width: 100vw;
   height: 100dvh;
+  margin-top: 75dvh;
+  background-color: var(--primary-color);
 }

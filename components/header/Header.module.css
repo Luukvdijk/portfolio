@@ -1,0 +1,91 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-15px) scale(2.5);
+}
+
+.middelground {
+  margin-top: 40em;
+
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.middelground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.trees {
+  transform: translateZ(-10px) scale(1);
+  width: 200%;
+  margin-top: 50em;
+}
+
+.contentContainer {
+  margin-top: 15em;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer h1 {
+  font-size: 7rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.titleContainer h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.seeMoreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seeMoreContainer h3 {
+  border-radius: 0.8em;
+  border: 0.1em solid black;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.img {
+  height: 15vh;
+  object-fit: cover;
+}

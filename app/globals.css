@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #0f2233;
+  --secondary-color: #82bda2;
+  --tertiary-color: #dddd80;
+  --text-color: #fff;
+}
+
+body {
+  margin: 0 0;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}

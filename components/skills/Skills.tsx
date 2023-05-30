@@ -22,7 +22,7 @@ export default async function Skills() {
           {skill?.map((skill) => {
             return (
               <div key={skill._id} className={styles.skill}>
-                <img
+                <Image
                   src={skill.image}
                   alt={skill.title}
                   width={0}

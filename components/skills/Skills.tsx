@@ -25,6 +25,8 @@ export default async function Skills() {
                 <img
                   src={skill.image}
                   alt={skill.title}
+                  width={0}
+                  height={0}
                   className={styles.img}
                 />
                 <p>{skill.title}</p>

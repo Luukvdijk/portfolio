@@ -43,7 +43,8 @@
 }
 
 .img {
-  aspect-ratio: 1/1;
+  width: 11vw;
+  height: 11vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -57,9 +58,5 @@
 
   .contentContainer p {
     font-size: 1rem;
-  }
-
-  .img {
-    width: 3em;
   }
 }

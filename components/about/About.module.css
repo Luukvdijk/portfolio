@@ -3,4 +3,65 @@
   height: 100dvh;
   margin-top: 75dvh;
   background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  display: flex;
+  height: fit-content;
+  width: 90vw;
+}
+
+.left {
+  width: 45vw;
+}
+
+.left h1 {
+  font-size: 5rem;
+  margin: 0 0;
+}
+
+.left h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 0 0;
+}
+
+.right {
+  width: 45vw;
+}
+
+.right p {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .left {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  .left h2 {
+    font-size: 1.5rem;
+  }
+
+  .right {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .right p {
+    font-size: 1.2rem;
+  }
 }

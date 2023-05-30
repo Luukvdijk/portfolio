@@ -1,0 +1,65 @@
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80vw;
+}
+
+.contentContainer h1 {
+  font-size: 5rem;
+}
+
+.contentContainer p {
+  font-size: 2rem;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  width: 90vw;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill p {
+  margin: 0 0;
+}
+
+.img {
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    margin-top: 0.5em;
+  }
+
+  .contentContainer h1 {
+    font-size: 2rem;
+  }
+
+  .contentContainer p {
+    font-size: 1rem;
+  }
+
+  .img {
+    width: 3em;
+  }
+}

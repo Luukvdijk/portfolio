@@ -1,6 +1,7 @@
 import { createClient, groq } from "next-sanity";
 import { project } from "@/types/project";
 import { page } from "@/types/page";
+import { skill } from "@/types/skill";
 import clientConfig from "./config/client-config";
 
 export async function getProjects(): Promise<project[]> {
@@ -53,5 +54,17 @@ export async function getPage(slug: string): Promise<page> {
       content,
     }`,
     { slug }
+  );
+}
+
+export async function getSkills(): Promise<skill[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "skill"]{
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+      "image": image.asset->url,
+    }`
   );
 }

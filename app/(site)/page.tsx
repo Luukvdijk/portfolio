@@ -9,6 +9,7 @@ export default async function Home() {
     <div className={styles.mainContainer}>
       <Header />
       <About />
+      {/* @ts-expect-error Server Component */}
       <Skills />
     </div>
   );

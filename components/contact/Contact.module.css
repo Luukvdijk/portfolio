@@ -1,4 +1,101 @@
 .mainContainer {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.mainContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 3rem;
+  margin: 0 0;
+  font-weight: lighter;
+}
+
+.title h1 {
+  font-size: 5rem;
+  margin: 0 0;
+}
+
+.inputContainer {
+  width: 80vw;
+  padding: 1em;
+  border-radius: 1rem;
+  border: 0.1em solid var(--tertiary-color);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.inputContainer p {
+  margin: 0 0;
+  font-size: 1.2rem;
+}
+
+.inputContainer input {
+  all: unset;
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+.inputContainer textarea {
+  all: unset;
+  flex: 1;
+  height: 20vh;
+  resize: none;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+
+.mainContainer form button {
+  all: unset;
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 1em;
+  border-radius: 1rem;
+  border: 0.1em solid var(--tertiary-color);
+  text-align: center;
+}
+
+.mainContainer form button:hover {
+  background-color: var(--tertiary-color);
+  color: black;
+}
+
+.mainContainer form button img {
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+    margin: 0 0;
+  }
+
+  .inputContainer:has(textarea) {
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .inputContainer textarea {
+    width: 100%;
+  }
 }

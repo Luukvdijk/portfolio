@@ -1,0 +1,25 @@
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.mainContainer h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.mainContainer p {
+  font-size: 2rem;
+  width: 80vw;
+  text-align: center;
+}
+
+.mainContainer span {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}

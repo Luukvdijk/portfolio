@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "@/components/header/Header";
 import About from "@/components/about/About";
 import Skills from "@/components/skills/Skills";
+import Project from "@/components/projecten/Projecten";
 
 export default async function Home() {
   return (
@@ -11,6 +12,7 @@ export default async function Home() {
       <About />
       {/* @ts-expect-error Server Component */}
       <Skills />
+      <Project />
     </div>
   );
 }

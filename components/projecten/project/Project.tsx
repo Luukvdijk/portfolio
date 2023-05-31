@@ -10,8 +10,8 @@ export default async function Project() {
     <>
       {project?.map((element) => {
         return (
-          <div className={styles.mainContainer}>
-            <div key={element._id} className={styles.left}>
+          <div key={element._id} className={styles.mainContainer}>
+            <div className={styles.left}>
               <h2>{element.functie}</h2>
               <h1>{element.name}</h1>
               <p>{element.uitleg}</p>

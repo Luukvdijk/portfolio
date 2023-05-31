@@ -1,37 +1,58 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import Image from "next/image";
 
 import send from "./send.svg";
 
 export default function Contact() {
+  const [mail, setMail] = useState<string>("");
+  const [subject, setSubject] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
+  const handelSubmit = () => {
+    event?.preventDefault();
+    if (mail !== "" && subject !== "" && message !== "") {
+      console.log(mail, subject, message);
+    } else {
+      console.log("mag nie");
+    }
+  };
+
   return (
     <div className={styles.mainContainer}>
       <div className={styles.title}>
         <h2>Heb jij een idee?</h2>
         <h1>Vertel mij er over</h1>
       </div>
-      <form>
+      <form onSubmit={handelSubmit}>
         <div className={styles.inputContainer}>
           Van: Luukvandijk2003@gmail.com
         </div>
         <div className={styles.inputContainer}>
           <p>Aan:</p>
-          <input />
+          <input
+            type="email"
+            value={mail}
+            onChange={(e) => setMail(e.target.value)}
+            required
+          />
         </div>
         <div className={styles.inputContainer}>
           <p>Onderwerp:</p>
-          <input />
+          <input
+            type="text"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            required
+          />
         </div>
         <div className={styles.inputContainer}>
           <p>Jouw bericht:</p>
           <textarea
-            defaultValue={`Beste Luuk van Dijk,
-            
-Ik heb een geweldig idee namelijk ...
-            
-Vriendelijk groet,
-...`}
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            required
           ></textarea>
         </div>
         <button type="submit">

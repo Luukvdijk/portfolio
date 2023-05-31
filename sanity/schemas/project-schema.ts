@@ -4,6 +4,11 @@ const project = {
   type: "document",
   fields: [
     {
+      name: "functie",
+      title: "Functie",
+      type: "string",
+    },
+    {
       name: "name",
       title: "Name",
       type: "string",
@@ -13,6 +18,16 @@ const project = {
       title: "Slug",
       type: "slug",
       options: { source: "name" },
+    },
+    {
+      name: "uitleg",
+      title: "Uitleg",
+      type: "string",
+    },
+    {
+      name: "talen",
+      title: "Talen",
+      type: "string",
     },
     {
       name: "image",
@@ -26,17 +41,6 @@ const project = {
           type: "string",
         },
       ],
-    },
-    {
-      name: "url",
-      title: "Url",
-      type: "url",
-    },
-    {
-      name: "content",
-      title: "Content",
-      type: "array",
-      of: [{ type: "block" }],
     },
   ],
 };

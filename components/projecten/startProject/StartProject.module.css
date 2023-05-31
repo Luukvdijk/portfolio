@@ -1,11 +1,12 @@
 .mainContainer {
-  width: 100vw;
+  flex: 0 0 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
+  scroll-snap-align: center;
 }
 
 .mainContainer h1 {
@@ -22,4 +23,21 @@
 .mainContainer span {
   color: var(--tertiary-color);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    scroll-snap-align: none;
+  }
+
+  .mainContainer h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .mainContainer p {
+    font-size: 1.2rem;
+    width: 80vw;
+    text-align: center;
+  }
 }

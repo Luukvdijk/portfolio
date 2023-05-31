@@ -12,6 +12,7 @@ export default async function Home() {
       <About />
       {/* @ts-expect-error Server Component */}
       <Skills />
+      {/* @ts-expect-error Server Component */}
       <Project />
     </div>
   );

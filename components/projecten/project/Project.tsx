@@ -2,21 +2,34 @@ import React from "react";
 import styles from "./Project.module.css";
 import Image from "next/image";
 
-import test from "../../../assets/1op1phone.svg";
+import { getProjects } from "@/sanity/sanity-utils";
 
-export default function Project() {
+export default async function Project() {
+  const project = await getProjects();
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.left}>
-        <h2>Frontend application</h2>
-        <h1>1 op 1 dieet</h1>
-        <p>Dieet bedrijf met eigen suplementen</p>
-        <p>Gemaakt met: Ionic, React, CSS, Typescript en javascript</p>
-        <span>Lees meer {">"}</span>
-      </div>
-      <div className={styles.right}>
-        <Image src={test} alt="test" className={styles.img} />
-      </div>
-    </div>
+    <>
+      {project?.map((element) => {
+        return (
+          <div className={styles.mainContainer}>
+            <div key={element._id} className={styles.left}>
+              <h2>{element.functie}</h2>
+              <h1>{element.name}</h1>
+              <p>{element.uitleg}</p>
+              <p>Gemaakt met: {element.talen}</p>
+              <span>Lees meer {">"}</span>
+            </div>
+            <div className={styles.right}>
+              <Image
+                src={element.image}
+                alt={element.name}
+                width={0}
+                height={0}
+                className={styles.img}
+              />
+            </div>
+          </div>
+        );
+      })}
+    </>
   );
 }

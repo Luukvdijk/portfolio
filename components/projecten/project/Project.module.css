@@ -1,8 +1,9 @@
 .mainContainer {
-  width: 100vw;
+  flex: 0 0 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-around;
+  scroll-snap-align: center;
 }
 
 .left {
@@ -44,4 +45,52 @@
 .img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: none;
+  }
+
+  .left {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .left h2 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0 0;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+    margin: 0 0;
+  }
+
+  .left p {
+    font-size: 1.2rem;
+  }
+
+  .left span {
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .right {
+    width: 100vw;
+  }
+
+  .img {
+    width: 80%;
+    height: auto;
+  }
 }

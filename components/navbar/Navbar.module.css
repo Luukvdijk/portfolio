@@ -1,0 +1,28 @@
+.mainContainer {
+  height: 7vh;
+  background-color: var(--navbar-color);
+  position: sticky;
+  margin-top: 75dvh;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  padding-right: 5em;
+  backdrop-filter: blur(4px);
+}
+
+.img {
+  height: 100%;
+  width: auto;
+}
+
+.contentContainer {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.contentContainer p {
+  font-size: 1.2rem;
+}

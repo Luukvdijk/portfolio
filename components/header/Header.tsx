@@ -11,14 +11,21 @@ import Arrow from "./assets/arrowDown.svg";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image src={bgSky} alt="sky" className={styles.background} />
-      <Image src={bgMountain} alt="mountain" className={styles.middelground} />
+      <Image priority src={bgSky} alt="sky" className={styles.background} />
       <Image
+        priority
+        src={bgMountain}
+        alt="mountain"
+        className={styles.middelground}
+      />
+      <Image
+        priority
         src={bgTrees}
         alt="mountain trees"
         className={`${styles.middelground} ${styles.trees}`}
       />
       <Image
+        priority
         src={bgBigTrees}
         alt="forest trees"
         className={styles.foreground}

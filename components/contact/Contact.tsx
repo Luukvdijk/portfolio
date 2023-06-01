@@ -5,13 +5,14 @@ import Image from "next/image";
 
 import send from "./send.svg";
 import succes from "./succes.svg";
+import error from "./error.svg";
 
 export default function Contact() {
   const [mail, setMail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [loading, setLoading] = useState(false);
-  const [wait, setWait] = useState(false);
+  const [wait, setWait] = useState("");
 
   const handelSubmit = async (event: any) => {
     event.preventDefault();
@@ -32,20 +33,18 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        console.log("message sent succesfully");
-        setWait(true);
+        setWait("succes");
         setLoading(false);
         setMail("");
         setSubject("");
         setMessage("");
       }
       if (!response.ok) {
-        console.log("error sending message");
+        setWait("error");
         setLoading(false);
       }
     } else {
-      console.log("mag nie");
-      setLoading(false);
+      setWait("error");
     }
   };
 
@@ -89,14 +88,23 @@ export default function Contact() {
           Gewoon versturen
           <Image src={send} alt="verstuur icon" width={16} height={16} />
         </button>
-        {wait === true ? (
+        {wait === "succes" ? (
           <div className={styles.popupContainer}>
             <Image src={succes} alt="succes icon" width={256} height={256} />
             <p>
               Ik heb jouw bericht ontvangen en ik zal er zo snel mogelijk naar
-              kijken,
+              kijken.
             </p>
-            <p>wacht een tijdje voor dat je nog een bericht kan sturen</p>
+            <p>Wacht een tijdje voor dat je nog een bericht kan sturen.</p>
+          </div>
+        ) : null}
+        {wait === "error" ? (
+          <div className={styles.popupContainer}>
+            <Image src={error} alt="error icon" width={256} height={256} />
+            <p>Jouw bericht is helaas niet binnen gekomen.</p>
+            <span onClick={() => setWait("")}>
+              Klik hier om het opniew te proberen
+            </span>
           </div>
         ) : null}
       </form>

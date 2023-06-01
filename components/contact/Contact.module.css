@@ -122,6 +122,11 @@
   margin: 0 0;
 }
 
+.popupContainer span {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .title h2 {
     font-size: 1.5rem;

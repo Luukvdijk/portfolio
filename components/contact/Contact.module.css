@@ -76,6 +76,16 @@
   color: black;
 }
 
+.mainContainer form button:disabled {
+  border: 0.1em solid gray;
+  cursor: not-allowed;
+}
+
+.mainContainer form button:disabled:hover {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
 .mainContainer form button img {
   margin-left: 1em;
 }

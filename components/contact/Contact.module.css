@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+  position: relative;
 }
 
 .title {
@@ -88,6 +89,37 @@
 
 .mainContainer form button img {
   margin-left: 1em;
+}
+
+.popupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+
+  position: absolute;
+  left: -1vw;
+  bottom: -1vh;
+  background: rgba(15, 34, 51, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  width: 85vw;
+  height: 57vh;
+  gap: 1em;
+}
+
+.popupContainer img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.popupContainer p {
+  margin: 0 0;
 }
 
 @media screen and (max-width: 600px) {

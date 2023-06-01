@@ -4,12 +4,14 @@ import styles from "./Contact.module.css";
 import Image from "next/image";
 
 import send from "./send.svg";
+import succes from "./succes.svg";
 
 export default function Contact() {
   const [mail, setMail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [loading, setLoading] = useState(false);
+  const [wait, setWait] = useState(false);
 
   const handelSubmit = async (event: any) => {
     event.preventDefault();
@@ -31,6 +33,7 @@ export default function Contact() {
 
       if (response.ok) {
         console.log("message sent succesfully");
+        setWait(true);
         setLoading(false);
         setMail("");
         setSubject("");
@@ -86,6 +89,16 @@ export default function Contact() {
           Gewoon versturen
           <Image src={send} alt="verstuur icon" width={16} height={16} />
         </button>
+        {wait === true ? (
+          <div className={styles.popupContainer}>
+            <Image src={succes} alt="succes icon" width={256} height={256} />
+            <p>
+              Ik heb jouw bericht ontvangen en ik zal er zo snel mogelijk naar
+              kijken,
+            </p>
+            <p>wacht een tijdje voor dat je nog een bericht kan sturen</p>
+          </div>
+        ) : null}
       </form>
     </div>
   );

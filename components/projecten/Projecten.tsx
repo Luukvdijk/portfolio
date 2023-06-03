@@ -5,7 +5,7 @@ import Project from "./project/Project";
 
 export default async function Projecten() {
   return (
-    <div className={styles.mainContainer}>
+    <div id="projects" className={styles.mainContainer}>
       <StartProject />
       {/* @ts-expect-error Server Component */}
       <Project />

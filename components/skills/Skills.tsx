@@ -7,7 +7,7 @@ export default async function Skills() {
   const skill = await getSkills();
 
   return (
-    <div className={styles.mainContainer}>
+    <div id="skills" className={styles.mainContainer}>
       <div className={styles.contentContainer}>
         <h1>Skills & experience</h1>
         <p>

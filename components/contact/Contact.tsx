@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.mainContainer}>
+    <div id="contact" className={styles.mainContainer}>
       <div className={styles.title}>
         <h2>Heb jij een idee?</h2>
         <h1>Vertel mij er over</h1>

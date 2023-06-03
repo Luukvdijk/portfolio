@@ -10,7 +10,7 @@ import Arrow from "./assets/arrowDown.svg";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <header id="header" className={styles.header}>
       <Image priority src={bgSky} alt="sky" className={styles.background} />
       <Image
         priority

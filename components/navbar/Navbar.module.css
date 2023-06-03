@@ -23,6 +23,8 @@
   justify-content: space-between;
 }
 
-.contentContainer p {
+.mainContainer a {
+  all: unset;
   font-size: 1.2rem;
+  cursor: pointer;
 }

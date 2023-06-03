@@ -8,6 +8,10 @@
   transform-style: preserve-3d;
   z-index: -1;
 }
+.header a {
+  all: unset;
+  cursor: pointer;
+}
 
 .background {
   transform: translateZ(-15px) scale(2.5);

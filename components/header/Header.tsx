@@ -37,7 +37,9 @@ export default function Header() {
           <h2>Frontend Developer</h2>
         </div>
         <div className={styles.seeMoreContainer}>
-          <h3>Bekijk mijn werk</h3>
+          <a href="#contact">
+            <h3>Bekijk mijn werk</h3>
+          </a>
           <Image src={Arrow} alt="arrow down" className={styles.img} />
         </div>
       </div>

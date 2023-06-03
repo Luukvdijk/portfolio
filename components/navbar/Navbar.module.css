@@ -10,11 +10,15 @@
   padding: 1.5em;
   padding-right: 5em;
   backdrop-filter: blur(4px);
+
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .img {
   height: 100%;
   width: auto;
+  -webkit-user-drag: none;
 }
 
 .contentContainer {
@@ -27,4 +31,22 @@
   all: unset;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.hamburgerContainer {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    display: none;
+  }
+
+  .mainContainer {
+    padding-right: 1.5em;
+  }
+
+  .hamburgerContainer {
+    display: block;
+  }
 }

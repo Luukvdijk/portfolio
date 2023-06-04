@@ -33,8 +33,119 @@
   cursor: pointer;
 }
 
-.hamburgerContainer {
+.hamContainer {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   display: none;
+  z-index: 100;
+}
+
+.hamContainer,
+.hamContainer::after,
+.hamContainer::before {
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.hamContainer {
+  margin: 0 0;
+}
+
+.hamburgerMenu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.hamburgerMenu:has(input:checked) {
+  --secondary-color: var(--primary-color);
+}
+.hamburgerMenu:has(input:focus-visible)::before,
+.hamburgerMenu:has(input:focus-visible)::after,
+.hamburgerMenu input:focus-visible {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.hamburgerMenu::before,
+.hamburgerMenu::after,
+.hamburgerMenu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--secondary-color);
+  border-radius: 999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburgerMenu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburgerMenu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburgerMenu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburgerMenu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: calc(var(--hamburger-height) + 1em);
+  background-color: var(--secondary-color);
+  color: black;
+  width: 100vw;
+  height: 100dvh;
+}
+
+.hamburgerMenu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+
+.sidebar nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.sidebar nav a {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -46,7 +157,7 @@
     padding-right: 1.5em;
   }
 
-  .hamburgerContainer {
+  .hamContainer {
     display: block;
   }
 }

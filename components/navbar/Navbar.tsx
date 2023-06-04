@@ -22,12 +22,18 @@ export default function Navbar() {
         <a href="#projects">Projecten</a>
         <a href="#contact">Contact</a>
       </div>
-      <div className={styles.hamburgerContainer}>
-        <svg fill="white" viewBox="0 0 100 100" width="70">
-          <rect width="80" height="10" x="10" y="25" rx="5"></rect>
-          <rect width="80" height="10" x="10" y="45" rx="5"></rect>
-          <rect width="80" height="10" x="10" y="65" rx="5"></rect>
-        </svg>
+      <div className={styles.hamContainer}>
+        <label className={styles.hamburgerMenu}>
+          <input type="checkbox" />
+        </label>
+        <aside className={styles.sidebar}>
+          <nav>
+            <a href="#about">Over mij</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projecten</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </aside>
       </div>
     </div>
   );

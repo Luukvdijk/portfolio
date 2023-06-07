@@ -13,6 +13,7 @@
 
   -webkit-user-drag: none;
   user-select: none;
+  z-index: 999;
 }
 
 .img {
@@ -31,6 +32,7 @@
   all: unset;
   font-size: 1.2rem;
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 .hamContainer {
@@ -40,7 +42,6 @@
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   display: none;
-  z-index: 100;
 }
 
 .hamContainer,

@@ -1,6 +1,7 @@
 .mainContainer {
+  margin-top: 7vh;
   width: 100vw;
-  height: 100vh;
+  height: 93vh;
   display: flex;
   justify-content: center;
 }
@@ -15,11 +16,11 @@
 }
 
 .contentContainer h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .contentContainer p {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .skillsContainer {
@@ -43,8 +44,8 @@
 }
 
 .img {
-  width: 11vw;
-  height: 11vh;
+  width: 8vw;
+  height: 8vh;
 }
 
 @media screen and (max-width: 600px) {

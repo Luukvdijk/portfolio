@@ -74,11 +74,13 @@
   font-size: 7rem;
   margin: 0;
   font-weight: bold;
+  text-shadow: 0 0 1em black;
 }
 
 .titleContainer h2 {
   font-size: 4rem;
   margin: 0;
+  text-shadow: 0 0 1em black;
 }
 
 .seeMoreContainer {

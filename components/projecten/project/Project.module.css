@@ -1,12 +1,16 @@
 .mainContainer {
-  flex: 0 0 100vw;
+  /* flex: 0 0 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-around;
-  scroll-snap-align: center;
+  scroll-snap-align: center; */
+  height: 40vh;
+  width: 700px;
+  background-color: var(--royalblue);
+  border: 15px solid var(--magenta);
 }
 
-.left {
+/* .left {
   width: 40vw;
   height: 100vh;
   display: flex;
@@ -93,4 +97,4 @@
     width: 80%;
     height: auto;
   }
-}
+} */

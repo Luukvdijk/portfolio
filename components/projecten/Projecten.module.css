@@ -1,10 +1,56 @@
+.mainContainer,
+.mainContainer:before,
+.mainContainer:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .mainContainer {
-  margin-top: 7vh;
+  background-color: var(--black);
+  overscroll-behavior: none;
+  -ms-overflow-style: none;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+.ghost {
   width: 100vw;
-  height: 93vh;
+}
+.thumbnailsContainer {
+  position: relative;
+  height: 100vh;
+  width: max-content;
   display: flex;
   align-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
+  padding: 0px 160px;
+  background-color: var(--black);
+  border: 40px solid var(--yellowGreen);
+}
+
+.thumbnails {
+  position: relative;
+  display: flex;
+  border: 20px solid var(--yellow);
+}
+
+.thumbnails > *:not(:last-child) {
+  margin-right: 45px;
+}
+
+.thumbnail {
+  height: 40vh;
+  width: 700px;
+  background-color: var(--royalblue);
+  border: 15px solid var(--magenta);
 }

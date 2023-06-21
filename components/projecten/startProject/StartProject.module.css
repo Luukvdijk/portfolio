@@ -1,15 +1,19 @@
 .mainContainer {
-  flex: 0 0 100vw;
+  /* flex: 0 0 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
-  scroll-snap-align: center;
+  scroll-snap-align: center; */
+  height: 40vh;
+  width: 700px;
+  background-color: var(--royalblue);
+  border: 15px solid var(--magenta);
 }
 
-.mainContainer h1 {
+/* .mainContainer h1 {
   font-size: 5rem;
   text-align: center;
 }
@@ -40,4 +44,4 @@
     width: 80vw;
     text-align: center;
   }
-}
+} */

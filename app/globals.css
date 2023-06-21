@@ -4,6 +4,12 @@
   --tertiary-color: #dddd80;
   --text-color: #fff;
   --navbar-color: #0f223398;
+
+  --black: #141414;
+  --yellowGreen: yellowgreen;
+  --yellow: yellow;
+  --royalblue: royalblue;
+  --magenta: magenta;
 }
 
 ::-webkit-scrollbar {

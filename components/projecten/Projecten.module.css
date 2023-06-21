@@ -7,13 +7,14 @@
 }
 
 .mainContainer {
-  background-color: var(--black);
+  background-color: var(--primary-color);
   overscroll-behavior: none;
   -ms-overflow-style: none;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-snap-type: x mandatory;
 }
 
 .scrollContainer {
@@ -22,35 +23,31 @@
   left: 0;
   right: 0;
   will-change: transform;
+  scroll-snap-type: x mandatory;
 }
 
 .ghost {
   width: 100vw;
+  scroll-snap-type: x mandatory;
 }
 .thumbnailsContainer {
   position: relative;
-  height: 100vh;
+  height: 97vh;
   width: max-content;
   display: flex;
   align-items: center;
-  padding: 0px 160px;
-  background-color: var(--black);
-  border: 40px solid var(--yellowGreen);
+  padding: 0px 800px 0 500px;
+  scroll-snap-type: x mandatory;
 }
 
 .thumbnails {
   position: relative;
   display: flex;
-  border: 20px solid var(--yellow);
-}
-
-.thumbnails > *:not(:last-child) {
-  margin-right: 45px;
+  scroll-snap-type: x mandatory;
 }
 
 .thumbnail {
   height: 40vh;
   width: 700px;
-  background-color: var(--royalblue);
-  border: 15px solid var(--magenta);
+  scroll-snap-type: y mandatory;
 }

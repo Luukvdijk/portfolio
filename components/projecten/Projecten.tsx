@@ -1,4 +1,5 @@
 "use client";
+//npm install react-scroll-percentage@4.2.0 --force
 import React, {
   useRef,
   useState,

@@ -56,10 +56,10 @@ export default function Contact() {
       </div>
       <form onSubmit={handelSubmit}>
         <div className={styles.inputContainer}>
-          Van: Luukvandijk2003@gmail.com
+          Aan: Luukvandijk2003@gmail.com
         </div>
         <div className={styles.inputContainer}>
-          <p>Aan:</p>
+          <p>Van:</p>
           <input
             type="email"
             value={mail}

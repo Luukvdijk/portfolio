@@ -68,23 +68,16 @@ export default function Projecten({ children }: { children: React.ReactNode }) {
   return (
     <div className={styles.mainContainer} ref={containerRef}>
       <div className={styles.scrollContainer}>
-        <motion.section
+        <motion.div
           ref={scrollRef}
           style={{ x: spring }}
           className={styles.thumbnailsContainer}
         >
           <div className={styles.thumbnails}>
             <StartProject />
-
             {children}
-            {/* <div className={styles.thumbnail} />
-            <div className={styles.thumbnail} />
-            <div className={styles.thumbnail} />
-            <div className={styles.thumbnail} />
-            <div className={styles.thumbnail} />
-            <div className={styles.thumbnail} /> */}
           </div>
-        </motion.section>
+        </motion.div>
       </div>
       <div
         ref={ghostRef}

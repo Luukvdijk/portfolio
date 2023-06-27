@@ -71,14 +71,15 @@
 }
 
 .titleContainer h1 {
-  font-size: 7rem;
+  font-size: var(--font-title);
   margin: 0;
   font-weight: bold;
   text-shadow: 0 0 1em black;
 }
 
 .titleContainer h2 {
-  font-size: 4rem;
+  font-size: var(--font-onderTitle);
+  font-weight: lighter;
   margin: 0;
   text-shadow: 0 0 1em black;
 }

@@ -14,23 +14,23 @@
 }
 
 .left h2 {
-  font-size: 3rem;
+  font-size: var(--font-onderTitle);
   font-weight: lighter;
   margin: 0 0;
 }
 
 .left h1 {
-  font-size: 5rem;
+  font-size: var(--font-subTitle);
   margin: 0 0;
 }
 
 .left p {
-  font-size: 2rem;
+  font-size: var(--font-text);
 }
 
 .left span {
   color: var(--tertiary-color);
-  font-size: 2rem;
+  font-size: var(--font-text);
   cursor: pointer;
 }
 

@@ -5,11 +5,10 @@
   --text-color: #fff;
   --navbar-color: #0f223398;
 
-  --black: #141414;
-  --yellowGreen: yellowgreen;
-  --yellow: yellow;
-  --royalblue: royalblue;
-  --magenta: magenta;
+  --font-title: 7rem;
+  --font-subTitle: 5rem;
+  --font-onderTitle: 3rem;
+  --font-text: 2rem;
 }
 
 ::-webkit-scrollbar {

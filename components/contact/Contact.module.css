@@ -23,13 +23,13 @@
 }
 
 .title h2 {
-  font-size: 3rem;
+  font-size: var(--font-onderTitle);
   margin: 0 0;
   font-weight: lighter;
 }
 
 .title h1 {
-  font-size: 5rem;
+  font-size: var(--font-subTitle);
   margin: 0 0;
 }
 

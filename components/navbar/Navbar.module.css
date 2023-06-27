@@ -2,6 +2,7 @@
   height: 7vh;
   background-color: var(--navbar-color);
   position: sticky;
+  position: -webkit-sticky;
   margin-top: 75dvh;
   top: 0;
 

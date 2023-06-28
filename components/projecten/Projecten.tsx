@@ -49,7 +49,6 @@ export default function Projecten({ children }: { children: React.ReactNode }) {
   const { scrollYProgress } = useScroll();
 
   const [containerRef, percentage] = useScrollPercentage({
-    /* Optional options */
     threshold: 0.1,
   });
 

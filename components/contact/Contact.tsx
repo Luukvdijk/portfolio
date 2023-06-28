@@ -85,7 +85,7 @@ export default function Contact() {
           ></textarea>
         </div>
         <button disabled={loading} type="submit">
-          Gewoon versturen
+          Stuur hem door
           <Image src={send} alt="verstuur icon" width={16} height={16} />
         </button>
         {wait === "succes" ? (

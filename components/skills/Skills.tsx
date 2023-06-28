@@ -11,12 +11,12 @@ export default async function Skills() {
       <div className={styles.contentContainer}>
         <h1>Skills & experience</h1>
         <p>
-          Het belangrijkste expertisegebied is front-end ontwikkeling.
+          Mijn expertisegebied is front-end ontwikkeling.
           <br /> <br />
-          HTML, CSS en JS heb ik geleerd voor het bouwen voor kleine web
-          applicaties. Met Vue of React samen met plugins, features en animaties
-          kunnen er grotere web aplicaties bebouwd worden. Ook hier heb ik al
-          ervaring mee.
+          Mijn basis van coderen is begonnen met HTML, CSS, en JS. Hier mee ben
+          ik kleine web applicaties gaan bouwen. Daarna ben ik frameworks zoals
+          React en Vue gaan leren zodat ik grotere applicaties kon gaan bouwen.
+          Hierdoor heb ik ervaring opgebouwd aan de onderstaande skills.
         </p>
         <div className={styles.skillsContainer}>
           {skill?.map((skill) => {

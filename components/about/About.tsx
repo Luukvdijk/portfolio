@@ -6,17 +6,17 @@ export default function About() {
     <div id="about" className={styles.mainContainer}>
       <div className={styles.contentContainer}>
         <div className={styles.left}>
-          <h1>
-            Ik ben Luuk, een <br /> web developer
-          </h1>
+          <h1>Luuk van Dijk</h1>
           <h2>Front-end Developer</h2>
         </div>
         <div className={styles.right}>
           <p>
-            Ik ben een ICT student met de focus op web development. <br />
+            Als student aan de Hogeschoo van Utrecht ligt mijn focus op web
+            development. <br />
             <br /> Ik ben een probleem oplosser en heb een oog voor detail. Ik
             ben geïnteresseerd in de frontend wereld en ik werk graag aan
-            ambitieuze projecten met interessante mensen.
+            ambitieuze projecten met met mensen die passie hebben voor hun
+            bedrijf of werk.
           </p>
         </div>
       </div>

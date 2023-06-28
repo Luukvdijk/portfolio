@@ -16,11 +16,11 @@
 }
 
 .contentContainer h1 {
-  font-size: 4rem;
+  font-size: var(--font-subTitle);
 }
 
 .contentContainer p {
-  font-size: 1.2rem;
+  font-size: var(--font-text);
 }
 
 .skillsContainer {

@@ -22,12 +22,12 @@
 }
 
 .left h1 {
-  font-size: 5rem;
+  font-size: var(--font-subTitle);
   margin: 0 0;
 }
 
 .left h2 {
-  font-size: 3rem;
+  font-size: var(--font-onderTitle);
   font-weight: lighter;
   margin: 0 0;
 }
@@ -37,7 +37,7 @@
 }
 
 .right p {
-  font-size: 2rem;
+  font-size: var(--font-text);
 }
 
 @media screen and (max-width: 600px) {

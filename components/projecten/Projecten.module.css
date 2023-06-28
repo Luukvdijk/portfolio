@@ -36,12 +36,10 @@
   width: max-content;
   display: flex;
   align-items: center;
-  padding: 0px 100px 0px 200px;
-  scroll-snap-type: x mandatory;
+  padding: 0px 350px 0 280px;
 }
 
 .thumbnails {
   position: relative;
   display: flex;
-  scroll-snap-type: x mandatory;
 }

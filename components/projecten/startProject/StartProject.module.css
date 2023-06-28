@@ -9,12 +9,12 @@
 }
 
 .mainContainer h1 {
-  font-size: 5rem;
+  font-size: var(--font-subTitle);
   text-align: center;
 }
 
 .mainContainer p {
-  font-size: 2rem;
+  font-size: var(--font-text);
   width: 80vw;
   text-align: center;
 }

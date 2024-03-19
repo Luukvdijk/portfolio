@@ -127,9 +127,11 @@
   right: 0;
   padding-top: calc(var(--hamburger-height) + 1em);
   background-color: var(--secondary-color);
-  color: black;
   width: 100vw;
   height: 100dvh;
+  /* TODO backdrop-filter doenst work */
+  backdrop-filter: blur(4px);
+  opacity: 90%;
 }
 
 .hamburgerMenu:has(input:checked) + .sidebar {
@@ -148,6 +150,7 @@
 
 .sidebar nav a {
   font-size: 2rem;
+  color: black;
 }
 
 @media screen and (max-width: 600px) {

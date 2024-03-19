@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.mainContainer span {
+.mainContainer a {
   color: var(--tertiary-color);
   cursor: pointer;
 }

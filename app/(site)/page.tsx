@@ -1,12 +1,11 @@
 import styles from "./page.module.css";
 
+import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
 import Header from "@/components/header/Header";
 import Navbar from "@/components/navbar/Navbar";
-import About from "@/components/about/About";
-import Skills from "@/components/skills/Skills";
 import Projecten from "@/components/projecten/Projecten";
-import Contact from "@/components/contact/Contact";
-import Project from "@/components/projecten/project/Project";
+import Skills from "@/components/skills/Skills";
 
 export default async function Home() {
   return (
@@ -16,10 +15,7 @@ export default async function Home() {
       <About />
       {/* @ts-expect-error Server Component */}
       <Skills />
-      <Projecten>
-        {/* @ts-expect-error Server Component */}
-        <Project />
-      </Projecten>
+      <Projecten />
       <Contact />
     </div>
   );

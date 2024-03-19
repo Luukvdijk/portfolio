@@ -1,45 +1,9 @@
-.mainContainer,
-.mainContainer:before,
-.mainContainer:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .mainContainer {
-  background-color: var(--primary-color);
-  overscroll-behavior: none;
-  -ms-overflow-style: none;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-snap-type: x mandatory;
-}
-
-.scrollContainer {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  will-change: transform;
-  scroll-snap-type: x mandatory;
-}
-
-.ghost {
+  margin-top: 7vh;
   width: 100vw;
-  scroll-snap-type: x mandatory;
-}
-.thumbnailsContainer {
-  position: relative;
-  height: 97vh;
-  width: max-content;
+  height: 93dvh;
+  background-color: var(--primary-color);
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0px 350px 0 280px;
-}
-
-.thumbnails {
-  position: relative;
-  display: flex;
 }

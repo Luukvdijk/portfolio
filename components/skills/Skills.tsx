@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./Skills.module.css";
-import Image from "next/image";
 import { getSkills } from "@/sanity/sanity-utils";
+import Image from "next/image";
+import styles from "./Skills.module.css";
 
 export default async function Skills() {
   const skill = await getSkills();

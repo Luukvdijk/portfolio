@@ -10,6 +10,7 @@ export default function StartProject() {
         Ik heb verschillende soorten aplicaties gebouwd voor verschillende
         soorten bedrijfen. ALs je wat werk van mij wilt zien blijf dan door
         scrollen of <a href="#contact">neem contact met mij op!</a>
+
       </p>
     </div>
   );

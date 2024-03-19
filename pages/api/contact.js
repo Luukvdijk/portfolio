@@ -1,5 +1,4 @@
-import { PortableText } from "@portabletext/react"
-import nodemailer from "nodemailer"
+import nodemailer from "nodemailer";
 
 export default async function ContactAPI(req, res) {
     const { mail, subject, message } = req.body
@@ -22,7 +21,7 @@ export default async function ContactAPI(req, res) {
             subject: subject,
             html: `
             <p>Mail: ${mail}</p>
-            <p>Mail: ${message}</p>
+            <p>Message: ${message}</p>
             `
         });
         return res.status(200).json({ message: "succes" })

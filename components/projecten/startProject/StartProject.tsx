@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./StartProject.module.css";
 
 export default function StartProject() {
@@ -8,9 +7,10 @@ export default function StartProject() {
         Casestudies & voorgaande <br /> projecten
       </h1>
       <p>
-        Er zijn verschillende soorten applicaties gebouwd voor diverse
-        bedrijven. Als je werk van mij wilt bekijken, kun je blijven scrollen of{" "}
-        <a href="#contact">contact met mij opnemen!</a>
+        Ik heb verschillende soorten aplicaties gebouwd voor verschillende
+        soorten bedrijfen. ALs je wat werk van mij wilt zien blijf dan door
+        scrollen of <a href="#contact">neem contact met mij op!</a>
+
       </p>
     </div>
   );

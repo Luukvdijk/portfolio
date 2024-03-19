@@ -1,8 +1,7 @@
-import React from "react";
-import styles from "./Navbar.module.css";
 import Image from "next/image";
+import styles from "./Navbar.module.css";
 
-import logo from "../../assets/logoWhite.svg";
+import logo from "../../assets/myLogo.svg";
 
 export default function Navbar() {
   return (

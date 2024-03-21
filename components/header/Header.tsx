@@ -1,12 +1,11 @@
-import React from "react";
 import styles from "./Header.module.css";
 
-import bgBigTrees from "./assets/bg-bigTrees.svg";
-import bgTrees from "./assets/bg-trees.svg";
-import bgMountain from "./assets/bg-mountain.svg";
-import bgSky from "./assets/bg-sky.svg";
 import Image from "next/image";
 import Arrow from "./assets/arrowDown.svg";
+import bgBigTrees from "./assets/bg-bigTrees.svg";
+import bgMountain from "./assets/bg-mountain.svg";
+import bgSky from "./assets/bg-sky.svg";
+import bgTrees from "./assets/bg-trees.svg";
 
 export default function Header() {
   return (
@@ -37,7 +36,7 @@ export default function Header() {
           <h2>Frontend Developer</h2>
         </div>
         <div className={styles.seeMoreContainer}>
-          <a href="#contact">
+          <a href="#projects">
             <h3>Bekijk mijn werk</h3>
           </a>
           <Image src={Arrow} alt="arrow down" className={styles.img} />

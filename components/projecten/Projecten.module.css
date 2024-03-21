@@ -7,3 +7,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.scrollSectionInner {
+  height: 93dvh;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
